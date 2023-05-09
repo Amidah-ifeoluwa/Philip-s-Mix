@@ -1,0 +1,414 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans',
+        'Gill Sans MT',
+        Calibri,
+        'Trebuchet MS',
+        sans-serif;
+}
+
+/* body {
+    height: 100vh;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background: url(./img/Cake.jpg);
+} */
+
+/* navbar begins */
+.logo_img {
+    width: 100px;
+}
+
+li {
+    list-style: none;
+}
+
+.cart {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+a:hover {
+    color: blue;
+}
+
+header {
+    position: relative;
+    padding: 0 32px;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.navbar .links {
+    display: flex;
+    gap: 32px
+}
+
+.navbar .toggle_btn {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: orange;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: white;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+.dropdown_menu {
+    /* display: none; */
+    position: absolute;
+    right: 32px;
+    top: 100px;
+    height: 0;
+    width: 200px;
+    background: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    animation: text-animation 1s 1 ease-in-out;
+    transition: 0.4s ease all;
+}
+
+@keyframes text-animation {
+
+    10% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+
+.dropdown_menu.open {
+    height: auto;
+
+}
+
+.dropdown_menu li {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    margin-top: 50px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.561), rgba(0, 0, 0, 0.641)), url(./img/Cake.jpg);
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+
+.form-title {
+    font-size: 26px;
+    font-weight: 600px;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+
+.main-user-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n) {
+    justify-content: end;
+}
+
+.user-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label {
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box input {
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.form-submit-btn {
+    margin-top: 40px;
+}
+
+.form-submit-btn input {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    background: orange;
+    transition: 0.3s;
+}
+
+.form-submit-btn input:hover {
+    background-color: white;
+    color: orange;
+}
+
+.idk {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.idk h3 {
+    color: white;
+    padding-left: 120px;
+}
+
+.idk h2 {
+    color: orange;
+    text-decoration: none;
+    padding-right: 140px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    background: #eeeeee;
+    padding: 30px 0 0 20px;
+    margin-bottom: opx
+}
+
+footer .footer_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .footer_main .footer_tag {
+    text-align: center;
+}
+
+footer .footer_main .footer_tag h2 {
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer_main .footer_tag p {
+    margin: 10px 0;
+}
+
+footer .footer_main .footer_tag i {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer_main .footer_tag i:hover {
+    color: orange;
+    transition: 1s ease;
+    transform: rotate(360deg);
+}
+
+footer .end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+footer .end span {
+    color: orange;
+    margin: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+@media(max-width: 992px) {
+
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    .container {
+        min-width: 280px;
+    }
+
+    .image {
+        margin-top: 70px;
+    }
+
+    .user-input-box {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n) {
+        justify-content: space-between;
+    }
+
+    .main-user-info {
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .idk {
+        display: flex;
+    }
+
+    .idk a {
+        text-align: center;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .idk h3 {
+        padding-right: 20px;
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 32px;
+        width: unset;
+    }
+
+    footer .footer_main {
+        display: block;
+    }
+
+}

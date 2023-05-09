@@ -1,0 +1,415 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans',
+        'Gill Sans MT',
+        Calibri,
+        'Trebuchet MS',
+        sans-serif;
+}
+
+body {
+    height: 100vh;
+    padding: 0;
+    /* margin: 0; */
+    /* background-color: #5c5a5a; */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.561), rgba(0, 0, 0, 0.641)), url(./img/Cake.jpg); */
+    background-size: cover;
+    background-position: center;
+}
+
+/* navbar begins */
+.logo_img {
+    width: 100px;
+}
+
+li {
+    list-style: none;
+}
+
+.cart {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+a:hover {
+    color: blue;
+}
+
+header {
+    position: relative;
+    padding: 0 32px;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.navbar .links {
+    display: flex;
+    gap: 32px
+}
+
+.navbar .toggle_btn {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: orange;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: white;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+.dropdown_menu {
+    /* display: none; */
+    position: absolute;
+    right: 32px;
+    top: 100px;
+    height: 0;
+    width: 200px;
+    background: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    animation: text-animation 1s 1 ease-in-out;
+    transition: 0.4s ease all;
+}
+
+@keyframes text-animation {
+
+    10% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+
+.dropdown_menu.open {
+    height: auto;
+
+}
+
+.dropdown_menu li {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* navbar ends */
+.section_top {
+    margin-top: 100px;
+    /* margin-bottom: 100px; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.561), rgba(0, 0, 0, 0.641)), url(./img/Cake.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 20s infinite ease-in-out;
+}
+
+.content h1 {
+    color: white;
+    font-size: 60px;
+    letter-spacing: 10px;
+}
+
+.content {
+    position: absolute;
+    top: 300px;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    align-items: center;
+    color: white;
+    transition: 0.3s;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 80px;
+}
+
+.content a {
+    background: orange;
+    padding: 10px 24px;
+    margin-top: 100px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.content a:hover {
+    background-color: black;
+    color: white;
+}
+
+@keyframes change {
+    0% {
+        background-image: url(./img/four-different-cocktail-smoothies-with-milky-cream-top.jpg)
+    }
+
+    20% {
+        background-image: url(./img/close-up-delicious-chocolate-cupcakes-with-raspberry.jpg);
+    }
+
+    40% {
+        background-image: url(./img/closeup-two-pieces-tasty-chocolate-cake-wooden-board.jpg);
+    }
+
+    60% {
+        background-image: url(./img/delicious-cakes-decorated-with-orange-chocolate-wooden-cutting-board-black-table.jpg);
+    }
+
+    80% {
+        background-image: url(./img/delicious-cookies-wooden-board-glass-milk.jpg);
+    }
+
+    100% {
+        background-image: url(./img/top-view-light-coleslaw-with-corn-lettuce-radish.jpg);
+    }
+
+    120% {
+        background-image: url(./img/top-view-plate-pasta-with-cheese-sauce-basil-black-table.jpg);
+    }
+
+    140% {
+        background-image: url(./img/vanilla-pie-isolated-rustic-wooden-platter.jpg);
+    }
+
+    160% {
+        background: linear-gradient(rgba(0, 0, 0, 0.561), rgba(0, 0, 0, 0.641)), url(./img/Cake.jpg);
+    }
+}
+
+.box-wrapper {
+    cursor: pointer;
+    transition: transform .2s;
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    height: 620px;
+}
+
+.img-2 {
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+    width: 300px;
+    align-items: center !important;
+    vertical-align: middle;
+    border-style: none;
+    padding: 20px 20px 20px 20px;
+    transition: transform .2s;
+}
+
+.img-2 {
+    max-width: 100%;
+    /* vertical-align: middle; */
+    border-style: none;
+    width: 150px;
+    align-items: center !important;
+    /* vertical-align: middle; */
+    border-style: none;
+    /* padding: 50px 50px 50x 100px; */
+    padding-left: 40px;
+}
+
+img {
+    width: 150%;
+}
+
+.img-2:hover {
+    transform: scale(1.2);
+}
+
+.box-2 {
+    background: orange;
+    width: 350px;
+    padding: 30px;
+    margin: 30px;
+}
+
+.web {
+    padding-bottom: 30px;
+    padding-left: 0%;
+    padding-top: 55px;
+}
+
+.box-3 {
+    background: orange;
+    width: 350px;
+    padding: 30px;
+    margin: 30px;
+}
+
+footer {
+    width: 100%;
+    background: #eeeeee;
+    padding: 30px 0 0 20px;
+}
+
+footer .footer_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .footer_main .footer_tag {
+    text-align: center;
+}
+
+footer .footer_main .footer_tag h2 {
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer_main .footer_tag p {
+    margin: 10px 0;
+}
+
+footer .footer_main .footer_tag i {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer_main .footer_tag i:hover {
+    color: orange;
+    transition: 1s ease;
+    transform: rotate(360deg);
+}
+
+footer .end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+footer .end span {
+    color: orange;
+    margin: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+@media(max-width: 992px) {
+
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 32px;
+        width: unset;
+    }
+
+    footer .footer_main {
+        display: block;
+    }
+}

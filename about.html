@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./about-.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="top">
+        <div class="navbar">
+            <div class="logo"><a href="#">
+                    <img class="logo_img" src="./img/1.png" alt="">
+                </a></div>
+            <ul class="links">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./menu.html">MENU</a></li>
+                <li><a href="./gallery.html">GALLERY</a></li>
+                <li><a href="./feedbacks.html">FEEDBACKS</a></li>
+                <li><a href="./about.html">ABOUT US</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+            <div class="cart">
+                <img src="./img/cart4.svg" alt="">
+            </div>
+            <a href="./signup.html" class="action_btn">SIGN UP</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./menu.html">MENU</a></li>
+            <li><a href="./gallery.html">SERVICE</a></li>
+            <li><a href="./feedbacks.html">FEEDBACKS</a></li>
+            <li><a href="./about.html">ABOUT US</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+            <li><a href="./signup.html" class="action_btn">SIGN UP</a></li>
+        </div>
+    </header>
+    <div class="section">
+        <div class="container">
+            <div class="flex">
+                <div class="tittle">
+                    <h1>About Us</h1>
+                    <hr class="underline">
+                </div>
+                <div class="content">
+                    <div class="article">
+                        <h3>Philip’s Mix is a confectionary and food production company situated in Lagos, Nigeria.
+                        </h3>
+                        <p>Our products are developed under the strictest of food hygiene standards and packaged
+                            accordingly as well.
+
+                            Our products will bring some freshness you never had before. Let’s bake the
+                            world around you!</p>
+                        <div class="button">
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team">
+                <div class="team_box">
+                    <div class="profile">
+                        <div class="image-section">
+                            <img src="./img/ceo.jpg">
+                            <div class="info">
+                                <h2 class="name">C.E.O</h2>
+                                <p class="bio">Chef Philip, chief executive officer of PhilipMix
+
+                                </p>
+                                <div class="team_icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+<footer>
+    <div class="footer_main">
+        <div class="footer_tag">
+            <h2>Location</h2>
+            <p>Lagos</p>
+            <p>kaduna</p>
+            <p>Abuja</p>
+            <p>Ikeja</p>
+            <p>Ikeja</p>
+        </div>
+        <div class="footer_tag">
+            <h2>Quick links</h2>
+            <p>Home</p>
+            <p>Menu</p>
+            <p>Gallery</p>
+            <p>feedbacks</p>
+            <p>About Us</p>
+            <p>Contacts</p>
+        </div>
+        <div class="footer_tag">
+            <h2>Contact</h2>
+            <p>+234 815 097 1593</p>
+            <p>+234 815 097 1593</p>
+            <p>ifeoluwaamidah@gmail.com</p>
+            <p>kooklinks@gmail.com</p>
+        </div>
+        <div class="footer_tag">
+            <h2>Our service</h2>
+            <p>Fast delivery</p>
+            <p>Easy payments</p>
+            <p>24/7 service</p>
+        </div>
+        <div class="footer_tag">
+            <h2>Follow us on</h2>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+    </div>
+    <p class="end">Design by <span><i class="fa-solid fa-face-grin"></i>PhilipMix</span></p>
+    </footer. /signup.html </html>
