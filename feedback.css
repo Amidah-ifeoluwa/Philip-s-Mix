@@ -359,6 +359,10 @@ footer .end span {
         width: unset;
     }
 
+    .review_box {
+        display: block;
+    }
+
     p,
     h1,
     h2,
