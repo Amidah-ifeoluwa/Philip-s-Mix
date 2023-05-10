@@ -260,7 +260,7 @@ h6 {
     transition: transform .2s;
     margin: 0px;
     margin-bottom: 10px;
-    padding: 0px;
+    /* padding: 0px; */
     display: flex;
     justify-content: space-around;
     padding: 50px;
@@ -387,7 +387,7 @@ footer .end span {
 
 
 
-@media(max-width: 996px) {
+@media only screen and (max-width: 900px) {
 
     .navbar .links,
     .navbar .action_btn {
@@ -404,6 +404,29 @@ footer .end span {
 
     .box-wrapper {
         display: block;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .box-2 {
+        background: orange;
+        width: 100%;
+        padding: 10px;
+        margin: 30px;
+    }
+
+    .web {
+        padding-bottom: 30px;
+        padding-left: 0%;
+        padding-top: 55px;
+    }
+
+    .box-3 {
+        background: orange;
+        /* width: 350px; */
+        padding: 10px;
+        margin: 30px;
+        width: 100%;
     }
 }
 

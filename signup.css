@@ -172,7 +172,7 @@ h6 {
 
 .container {
     width: 100%;
-    max-width: 650px;
+    max-width: 350px;
     background: rgba(0, 0, 0, 0.5);
     padding: 28px;
     margin: 0 28px;
@@ -398,6 +398,13 @@ footer .end span {
     .idk h3 {
         padding-right: 20px;
         padding-left: 0px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 400px;
+        padding: 28px;
+        margin: 0 28px;
     }
 }
 
