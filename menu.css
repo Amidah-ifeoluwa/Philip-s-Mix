@@ -381,7 +381,7 @@ footer .end span {
     border-radius: 15px;
 }
 
-@media(max-width: 992px) {
+@media(max-width: 996px) {
 
     .navbar .links,
     .navbar .action_btn {
