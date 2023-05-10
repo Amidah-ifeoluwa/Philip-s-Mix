@@ -361,4 +361,9 @@ footer .end span {
     footer .footer_main {
         display: block;
     }
+
+    .mmm {
+        width: 10%;
+        height: 10%;
+    }
 }

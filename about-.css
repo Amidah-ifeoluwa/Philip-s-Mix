@@ -168,7 +168,11 @@ h6 {
     display: block;
 }
 
-.section .container {
+.section {
+    width: 100%;
+}
+
+.container {
     width: 80%;
     display: flex;
     margin: 0px auto;
@@ -422,6 +426,14 @@ footer .end span {
         padding: 100px 50px;
     }
 
+    .underline {
+        width: 160px;
+        height: 2px;
+        transform: translate(-50%, -50%);
+        left: 48%;
+        position: absolute;
+    }
+
     .section .container {
         width: 80%;
         display: block;
@@ -437,7 +449,7 @@ footer .end span {
 
     .image-section {
         float: none;
-        width: 100%;
+        width: 50%;
         margin-top: 50px;
     }
 
@@ -446,6 +458,26 @@ footer .end span {
         height: auto;
         display: block;
         margin: auto;
+    }
+
+    .team .team_box .profile .info .name {
+        color: orange;
+        margin-bottom: 15px;
+        /* padding: 0 0 70px 0; */
+        position: relative;
+        top: 10px;
+        left: 40%;
+    }
+
+    .team {
+        margin-top: 200px;
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 
     .container .tittle h1 {
