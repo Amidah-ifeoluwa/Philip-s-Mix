@@ -423,7 +423,7 @@ footer .end span {
         background: orange;
         width: 90%;
         padding: 10px;
-        margin: 30px 30px 30px 90px;
+        margin: 30px 30px 30px 30px;
     }
 
     .web {
@@ -436,7 +436,7 @@ footer .end span {
         background: orange;
         /* width: 350px; */
         padding: 10px;
-        margin: 30px 30px 30px 90px;
+        margin: 30px 30px 30px 30px;
         width: 90%;
     }
 }
